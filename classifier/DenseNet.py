@@ -5,6 +5,9 @@ from layer import *
 from tensorflow.layers import flatten
 import pdb
 
+from classifier.layer import conv_2d_BN_Relu
+
+
 def pretrained_classifier(inputae, n_label, reuse,  name='classifier', isTrain = False, n_filters = 64, output_bias=None):
     print("Classifier", isTrain)
 
